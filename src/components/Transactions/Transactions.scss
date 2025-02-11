@@ -1,0 +1,103 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .center-text {
+        text-align: start;
+        font-size: 1em;
+        padding-bottom: 0.1em;
+        color: gray;
+    }
+
+    .row-item {
+        display: flex;
+        flex-direction: column;
+        /* Stack the text vertically inside each item */
+        text-align: left;
+        /* Optional: centers the text */
+    }
+}
+
+.transactions-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--color-gray-200);
+    gap: 1em;
+    margin-top: 1em;
+    padding: 1em 0;
+
+    .transactions-title {
+        text-align: left;
+        font-size: 0.9em;
+        padding-bottom: 0.4em;
+        color: gray;
+    }
+
+    .transaction-item {
+        background: #fff;
+        border: 1px solid var(--color-gray-200);
+        border-radius: 4px;
+        box-shadow: var(--shadow-elevation-low);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        font-size: 22px;
+
+    }
+
+    .transaction-icon {
+        align-items: center;
+        background: var(--color-gray-100);
+        border-right: 1px solid var(--color-gray-200);
+        color: var(--color-black-400);
+        display: flex;
+        flex-shrink: 0;
+        height: 60px;
+        padding: 0.75em;
+        width: 60px;
+        justify-content: center;
+
+        svg {
+            display: block;
+            height: 32px;
+            width: 32px;
+        }
+    }
+
+    .transaction-text-column{
+        text-align: left;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 0.5em;
+    }
+
+    .transaction-date {
+        color: var(--color-gray-500);
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    .transaction-description {
+        color: var(--color-gray-800);
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .transaction-amount {
+        color: var(--color-gray-500);
+        font-size: 20px;
+        font-weight: 400;
+        white-space: nowrap;
+        margin-left: auto;
+        padding-right: 0.4em;
+    }
+    .transaction-amount-positive {
+        color: var(--color-green-700);
+      }
+      
+      .transaction-amount-negative {
+        color: var(--color-red-700);
+      }
+}
