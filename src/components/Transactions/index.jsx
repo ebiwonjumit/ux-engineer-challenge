@@ -40,12 +40,6 @@ export const Transactions = () => {
     Travel,
     Clothing,
   }
-  const normalizeCategoryName = (categoryName) => {
-    return categoryName
-      .replace(/&/g, "") // Remove "&" symbol
-      .replace(/\s+/g, "") // Remove all spaces
-  }
-
   return (
     <Pane size="lg" title="Transactions">
       <div className="row space-evenly">
